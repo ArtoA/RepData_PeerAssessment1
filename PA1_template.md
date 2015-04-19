@@ -18,7 +18,7 @@ names(daily_steps) <- c("day", "steps")
 hist(daily_steps$steps, xlab = "Steps", main = "Daily Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png) 
+![](figure/unnamed-chunk-2-1.png) 
 
 
 ```r
@@ -38,7 +38,7 @@ names(interval_steps) <- c("interval", "steps")
 plot(interval_steps, type = 'l', xlab = 'Interval', ylab = 'Average Steps')
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
+![](figure/unnamed-chunk-4-1.png) 
 
 ```r
 max_steps <- max(interval_steps$steps)
@@ -70,7 +70,7 @@ names(new_daily_steps) <- c("day", "steps")
 hist(new_daily_steps$steps, xlab = "Steps", main = "Daily Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-6-1.png) 
+![](figure/unnamed-chunk-6-1.png) 
 
 
 ```r
@@ -96,6 +96,6 @@ ggplot(weekend_steps, aes(interval, steps)) + geom_line() + facet_grid(weekend ~
     xlab("Interval") + ylab("Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-8-1.png) 
+![](figure/unnamed-chunk-8-1.png) 
 
 During weekdays there is an activity spike in the morning. During weekends activitys are more evenly distributed, there are multiple high points circa 150 steps during the day.
